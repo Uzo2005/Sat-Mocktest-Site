@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right,#cce6ff,#b3b3ff,#cce6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.break{
+    display: grid;  
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background: #6666ff;
+    padding: 35px;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+}
+.congrats{
+    color: #4dff4d;
+    font-size: 20px;
+    font-weight: 700;
+}
+.ticks{
+    color: #00e600;
+}
+
+.next_section{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 50px; 
+    margin-bottom: 50px;  
+}
+
+.choice{
+    color: #1aff1a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.next_section button{
+    height: 50px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 150px;
+    color: #ffff66;
+    background: #6666ff;
+    border: 1px solid skyblue; 
+    contain: content;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.next_section button:hover{
+    border: 1px solid black;
+    color: white;
+    background: rgb(68, 140, 235);
+}

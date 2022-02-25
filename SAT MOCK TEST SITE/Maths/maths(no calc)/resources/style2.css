@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: skyblue;
+}
+/*STYLING THE HEADER SECTION*/
+.header_section{
+    contain: content;
+    height: auto;
+    width: 100%;
+    background: lightblue;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+
+/*STYLING THE HEADER BUTTON*/
+.header_section button{
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 4px;
+    height: 25px;
+    width: 200px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.header_section button:hover{
+    background: white;
+    color: blue;
+}
+.header_section button:active{
+    background: rgb(240, 206, 240);
+    border: 1px solid rgb(248, 205, 248);
+    color: white;
+}
+
+
+/*STYLING THE Math Grid-in SECTION*/
+.math_gridins{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(227, 239, 245);
+    margin: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    line-height: 30px;
+    text-align: justify;
+    height: 37vh;
+    contain: content;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    user-select: none;
+    cursor: pointer;
+}
+.grid-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    height: 37vh;
+    border: none;
+    border-radius: 5px;
+    background: rgb(197, 226, 240);
+    cursor: pointer;
+    user-select: none;
+}
+
+textarea{
+    resize: none;
+    border: 1px solid rgb(110, 110, 241);
+    border-radius: 5px;
+    outline: 1px solid silver;
+    height: 40px;
+    width: 65px;
+    padding-top: 6px;
+    padding-left: 14px;
+    margin-right: 0;
+    margin-bottom: 7px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*STYLING THE FOOOTER SECTION*/
+.footer_section{
+    height: 60px;
+    width: 100%;
+    background: lightblue;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    justify-content: end;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+/*STYLING THE FOOTER BUTTON*/
+.footer_section button{
+    background: rgb(240, 239, 239);
+    border: 1px solid blue;
+    border-radius: 4px;
+    height: 25px;
+    width: 200px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: blue;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.footer_section button:hover{
+    background: blue;
+    color: white;
+}
+.footer_section button:active{
+    background: rgb(190, 145, 152);
+    color: white;
+    border: 1px solid rgb(216, 174, 181);
+}
+/*STYLING THE SCROLLBARS*/
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    border: 1px solid  rgb(210, 231, 245);
+}
+::-webkit-scrollbar-thumb{
+    background:rgba(72, 72, 247, 0.445);
+    border-radius: 4px;
+}
