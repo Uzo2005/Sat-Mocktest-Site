@@ -36,3 +36,25 @@ function updateCountdown_minutes() {
     clock.style.background = "#ff0000"
   }
 }
+function redirectpage(){
+  window.location = "C:/Users/Igwe Peter/Desktop/SAT MOCK TEST SITE/instruction pages/after MathsNoCalc/mathsCalc_instructions.html"
+}
+setTimeout("redirectpage()", 1502000)
+
+//BUTTON ALERTS
+
+function confirmAction() {
+  var popup = confirm(" Are Sure You Want To Submit?\n                      And Start The Next Section");
+  if (popup == false){
+    event.preventDefault();
+  }
+}
+
+/*function noReturn() {
+  if (localStorage.getItem("visited")) {
+    window.location.href = "C:/Users/Igwe Peter/Desktop/SAT MOCK TEST SITE/instruction pages/after MathsNoCalc/mathsCalc_instructions.html"
+  }
+  localStorage.setItem("visited", "true");  
+}
+
+setTimeout("noReturn()", 1502000);*/

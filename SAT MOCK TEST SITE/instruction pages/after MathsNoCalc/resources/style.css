@@ -11,7 +11,6 @@ body{
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
-    overflow-y: hidden;
 }
 
 /*STYLING THE MATHS(NO CALC) INSTRUCTIONS PAGE*/

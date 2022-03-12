@@ -18,3 +18,16 @@ function updateCountdown_minutes() {
   counts.innerHTML = `${secs}`;
   time--;
 }
+function redirectpage(){
+  window.location = "C:/Users/Igwe Peter/Desktop/SAT MOCK TEST SITE/instruction pages/after writing/mathsNoCalc_instructions.html"
+}
+setTimeout("redirectpage()", 602000)
+
+//BUTTON ALERTS
+
+function confirmAction() {
+  var popup = confirm("You Dont Need A Break?");
+  if (popup == false){
+    event.preventDefault();
+  }
+}
