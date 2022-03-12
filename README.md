@@ -2,7 +2,7 @@
 My first personal project----expect to see lots of bugs😢
 
 
-The idea for this project came to me when I observed that the SAT Mocktest, EdUSAabuja members used for practice was administered with google forms which I felt was not a very effective method.
+The idea for this project came to me when I observed that the SAT Mocktest, which EdUSAabuja members used to practice was administered with google forms which I felt was not a very effective method.
 I am not actually sure what a readme file should contain but I will try my best to explain what I have done in this project and what I still hope to do.
 
 THIS IS HOW THIS WEBSITE WORKS:
