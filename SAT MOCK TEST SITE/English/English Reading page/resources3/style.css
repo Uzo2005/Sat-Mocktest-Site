@@ -66,6 +66,7 @@ body{
 
 /*STYLING THE READING SECTION*/
 .reading_section{
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
@@ -134,7 +135,7 @@ body{
 }
 /*STYLING THE SCROLLBARS*/
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 4px;
 }
 ::-webkit-scrollbar-track{
     border: 1px solid  rgb(210, 231, 245);

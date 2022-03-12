@@ -5,8 +5,6 @@
 }
 body{
     background: skyblue;
-    box-sizing: border-box;
-    display: grid;
     overflow-y: scroll;  
     overflow-x: scroll;  
 }
@@ -15,9 +13,8 @@ body{
 .instructions-box{
     height: 20%;
     width: 50%;
-    margin-left: 25%;
-    margin-right: 30px;
-    position: absolute;
+    margin: 0 auto;
+    
 }
 
 img{
@@ -26,23 +23,18 @@ img{
     border-radius: 50%;
     margin-top: 30px;
     margin-left: 40%;
-    cursor: pointer;
-    user-select: none; 
+    cursor: pointer; 
     border: 1px solid cornflowerblue;
-    user-select: none; 
     box-shadow: 5px 5px 13px steelblue,
                 -5px -5px 13px steelblue;
 }
 
 /*INSTRUCTIONS BOX STYLING*/
 .info_box{
-    height: fit-content;
-    width: fit-content;
     min-width: 20px;
     min-height: 30px;
     margin-top: 30px;
     margin-bottom: 50px;
-    contain: content;
     box-shadow: 13px 13px 20px lightgray,
     -13px -13px 20px lightgrey;
     background: white;
@@ -62,12 +54,12 @@ img{
     font-size: 20px;
     font-weight: 700;
     color: blue;
-    user-select: none;
+    cursor: default;
 } 
 
 .info_box .info_list{
     padding: 10px 35px;
-    user-select: none;
+    cursor: default;
 }
 
 .info_box .info_list .info{
