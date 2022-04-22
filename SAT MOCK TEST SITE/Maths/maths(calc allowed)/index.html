@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="../../styles/exam.css">
     <title>EducationUSAabuja SAT Mocktest</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <header>
             
             <div>
-                <a href="/instruction pages/The End/index.html" onclick="confirmAction()"><button>Finish The SAT!</button></a>
+                <button class="skip">Finish The SAT!</button>
                 
                 <div id="clock">
                     <div class="container_minutes"><span class="minutes"><span id="countdown_minutes">55</span> Minutes </span></div>    
@@ -36,6 +36,12 @@
             <a href="./grid-ins.html"><button>Move to questions<span> 11 - 20 </span></button></a>
         </footer>
     </div>
-    <script src="./resources/script.js"></script>
+
+    <dialog id="modal" class="modal">
+        <span class="prompt">Are you sure you want to skip this section and finish the Test?</span>
+        <button class="no">Not yet</button>
+        <a href="../../instruction pages/The End/index.html"><button class="yes">Am Sure!</button></a>
+    </dialog>
+    <script src="./script.js"></script>
 </body>
 </html>

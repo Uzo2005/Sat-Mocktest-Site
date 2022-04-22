@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: skyblue;
+}
+/*STYLING THE HEADER SECTION*/
+.header_section{
+    contain: content;
+    height: auto;
+    width: 100%;
+    background: lightblue;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+
+/*STYLING THE TIMER*/
+
+#clock{
+    display: inline-block;
+    color: black;
+    margin-left: calc(100vw - 50vw);
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #80ff80;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.container_minutes,
+.container_seconds{
+    box-sizing: border-box;
+    display: inline;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*STYLING THE HEADER BUTTON*/
+.header_section button{
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 4px;
+    height: 25px;
+    width: 200px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.header_section button:hover{
+    background: white;
+    color: blue;
+}
+.header_section button:active{
+    background: rgb(240, 206, 240);
+    border: 1px solid rgb(248, 205, 248);
+    color: white;
+}
+
+
+/*STYLING THE READING SECTION*/
+.reading_section{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+/*STYLING THE PASSAGE SECTION*/
+.reading_section .passage_section{
+    background: rgb(210, 231, 245);    
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 30px;
+    text-align: justify;
+    height: calc(100vh - 160px);
+    contain: content;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/*STYLING THE QUESTION SECTION*/
+.reading_section .question_section{
+    margin-left: 5px;
+    background: rgb(227, 239, 245);
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 30px;
+    text-align: justify;
+    height: calc(100vh - 160px);
+    contain: content;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/*STYLING THE FOOOTER SECTION*/
+.footer_section{
+    height: 60px;
+    width: 100%;
+    background: lightblue;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    justify-content: end;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+/*STYLING THE FOOTER BUTTON*/
+.footer_section button{
+    background: rgb(240, 239, 239);
+    border: 1px solid blue;
+    border-radius: 4px;
+    height: 25px;
+    width: 200px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: blue;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.footer_section button:hover{
+    background: blue;
+    color: white;
+}
+.footer_section button:active{
+    background: rgb(190, 145, 152);
+    color: white;
+    border: 1px solid rgb(216, 174, 181);
+}
+/*STYLING THE SCROLLBARS*/
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-track{
+    border: 1px solid  rgb(210, 231, 245);
+}
+::-webkit-scrollbar-thumb{
+    background:rgba(72, 72, 247, 0.445);
+    border-radius: 4px;
+}
+
+/* Styling the modal */
+.modal{
+    background-color: #e6f2ff;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 150ch;
+    border: none;
+    box-shadow: 13px 13px 20px black,
+    -13px -13px 20px grey;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: atma;
+    padding: 20px;
+    transition: all 0.3 ease-out; 
+}
+
+.modal::backdrop{
+    background: black;
+    opacity: 0.5;
+}
+
+.modal .prompt{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.modal button{
+    border: 1px solid blue;
+    margin:  50px;
+    margin-left: 80px;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3 ease-out;
+}
+.modal button:hover{
+    background-color: blue;
+    color: white;
+}

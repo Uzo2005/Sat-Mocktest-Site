@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="../../styles/instructions.css">
     <title>EducationUSAabuja  SAT Mocktest</title>
 </head>
 <body>
-    <!--THE INSTRUCTIONS PAGE-->
-    <div class="maths_noCalc">
-        <header>
-            <!--logo section-->
-            <div class="official_logo">
-                <img src="../images/blue logo.jpg" alt="EducationUSA logo" title="EducationUSAabuja logo">
-            </div>
-        
-        </header>
-    </div>
+    <div class="instructions-box">
+        <!--THE INSTRUCTIONS PAGE-->
+    
+        <!--logo section-->
+    <img src="../images/official logo.jpg" alt="EducationUSA logo" title="EducationUSAabuja logo">
     
     <div class="info_box">
         <!--Info box-->
@@ -33,20 +28,18 @@
         </div>
         <div class="buttons">
             <a href="#"><button class="Exit">Exit</button></a> 
-            <a href="/Maths/maths(no calc)/index.html" onclick="confirmAction()"><button class="Start">Start Timer</button></a>
+            <button class="Start">Start Timer</button>
         </div>
     </div>
 
+    <dialog id="modal" class="modal">
+        <span class="prompt">Are you sure you want to start the Timer?</span>
+        <button class="no">Not yet</button>
+        <a href="../../Maths/maths(no calc)/index.html"><button class="yes">Am Sure!</button></a>
+        
+    </dialog>
 
-    <script>
-        //BUTTON ALERTS
 
-function confirmAction() {
-    var popup = confirm(" Are Sure You Want To Start The Timer?");
-    if (popup == false){
-      event.preventDefault();
-    }
-  }
-    </script>
+    <script src="../../js/site.js"></script>
 </body>
 </html>
