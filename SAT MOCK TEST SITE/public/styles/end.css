@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,#cce6ff,#b3ecff,#cce6ff);
+    font-family: atma;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+/*STYLING THE BREAK PAGE*/
+.break{
+    display: grid;  
+    border: 1px solid steelblue;
+    border-radius: 3px;
+    text-align: center;
+    background:  #99ddff;
+    padding: 35px;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+}
+.congrats{
+    color: #0066ff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.ticks{
+    color: #99ff66;
+}
+.sat_info{
+    font-size: 20px;
+    font-weight: 500;
+    color:  #6600ff;
+}
+.advice{
+    color: #9900ff;
+    font-size: 14px;
+}
+#timer{
+    color: #ff8566;
+}
+
+
+.next_section{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 50px; 
+    margin-bottom: 50px;  
+}
+
+.next_section button{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color:#99ff99;
+    background: #1a1aff;
+    border: 2px solid #000099; 
+    cursor: pointer;
+    contain: content;
+}
+.next_section button:hover{
+    color: #1a1aff;
+    background: #99ff99;
+}
+
+
+/* STYLING THE UNSERIOUS MODAL SELECTOR */
+.unserious{
+    text-decoration: underline;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.unserious:hover{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Styling the modal */
+.modal{
+    background-color: #e6f2ff;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 150ch;
+    border: none;
+    box-shadow: 13px 13px 20px black,
+    -13px -13px 20px grey;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: atma;
+    padding: 20px;
+    transition: all 0.3 ease-out; 
+}
+
+.modal::backdrop{
+    background: black;
+    opacity: 0.5;
+}
+
+.modal .prompt{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.modal button{
+    border: 1px solid blue;
+    margin:  50px;
+    margin-left: 80px;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3 ease-out;
+}
+.modal button:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* STYLING THE JOKE PICTURES */
+.joke{
+    background-color: #4d4d4d;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 150ch;
+    border: none;
+    box-shadow: 13px 13px 20px black,
+    -13px -13px 20px #404040;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 20px;
+    transition: all 0.3 ease-out; 
+}
+
+.joke::backdrop{
+    background-color: black;
+    opacity: 0.7;
+}
+
+.jokepics{
+    margin: auto;
+    display: block;
+    height: 500px;
+    width: 400px;
+}
+
+.times{
+    font-family: glegoo;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.times:hover,
+.times:focus {
+    color: #e6e6e6;
+    text-decoration: none;
+    cursor: pointer;
+    width: 30px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: skyblue;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 10%;
+    color: white;
+}
+
+.dots{
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

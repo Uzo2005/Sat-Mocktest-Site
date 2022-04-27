@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue; 
+}
+
+/*STYLING THE LOGO*/
+.instructions-box{  /*Centering the Instructions box */
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    cursor: pointer; 
+    border: 1px solid cornflowerblue;
+    box-shadow: 5px 5px 13px #737373,
+                -5px -5px 13px #f2f2f2;
+}
+
+/*INSTRUCTIONS BOX STYLING*/
+.info_box{
+    width: 100%;
+    height: 100%;
+    box-shadow: 13px 13px 20px #808080,
+    -13px -13px 20px lightgrey;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+/*STYLING INSTREUCTIONS*/
+.info_box .info_title{
+    height: 60px;
+    border-bottom: 1px solid blue;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
+    cursor: default;
+} 
+
+.info_box .info_list{
+    padding: 10px 35px;
+    cursor: default;
+}
+
+.info_box .info_list .info{
+    margin: 5px 0px;
+    font-size: 17px;
+}
+
+.info_box .info_list .info b{
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+ .important{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: blue;
+ }
+ .warning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    color: slateblue;
+    font-weight: 700;
+    font-size: 10px;
+
+ }
+.info_box .buttons{
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+    border-top: 1px solid blue;
+}
+
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3 ease-out;
+}
+
+.info_box .buttons .Exit{
+    border-color: blue;
+    color: blue;
+}
+
+.info_box .buttons .Start{
+    color: white;
+    background: blue;
+}
+
+.info_box .buttons .Exit:hover{
+    background-color: blue;
+    color: white;
+}
+
+.info_box .buttons .Start:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+/* Styling the modal */
+.modal{
+    background-color: #e6f2ff;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 150ch;
+    border: none;
+    box-shadow: 13px 13px 20px black,
+    -13px -13px 20px grey;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: atma;
+    padding: 20px;
+    transition: all 0.3 ease-out; 
+}
+
+.modal::backdrop{
+    background: black;
+    opacity: 0.5;
+}
+
+.modal .prompt{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.modal button{
+    border: 1px solid blue;
+    margin:  50px;
+    margin-left: 80px;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3 ease-out;
+}
+.modal button:hover{
+    background-color: blue;
+    color: white;
+}

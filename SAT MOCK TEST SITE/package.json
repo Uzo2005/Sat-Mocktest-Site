@@ -2,14 +2,16 @@
   "name": "sat-mock-test-site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^9.6.11"
+    "express": "^4.17.3",
+    "path": "^0.12.7"
   }
 }
