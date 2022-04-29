@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../styles/end.css">
+    <title>EducationUSAabuja SAT Mocktest</title>
+</head>
+<body>
+    <div class="break">
+        <span class="congrats">Congratulations!, You Have Successfully Completed The English Section Of This MockTest <span class="ticks">✔✔</span>.</span><br>
+        <span class="sat_info">In The Real SAT, There Is Usually A Short Leisure-Break At This Point.</span><br>
+        <span class="advice">
+            <span>So Chill Out For <span id="timer"> <span id="mins">10</span> minutes <span id="sec">00</span> seconds</span>  and Have A snack.</span><br> 
+            <span> While You Wait, I advise You Take Snacks <span class="unserious">Like These</span> To Your SAT Center.</span>
+        </span>
+    </div>
+    
+    <div class="next_section">
+        <button>Proceed To The Math Section</button>
+    </div>
+
+    <dialog id="joke" class="joke">
+        <div><span class="times">&times;</span>
+            <img src="../images/bread and akara.jpg" alt="Am just kidding, bro ;)" class="jokepics fade">
+            <img src="../images/Screenshot 2022-04-26 143141.png" alt="Am just kidding, bro ;)" class="jokepics fade">
+            <img src="../images/Screenshot 2022-04-26 144323.png" alt="Am just kidding, bro ;)" class="jokepics fade">
+            <img src="../images/Screenshot 2022-04-26 143639.png" alt="Am just kidding, bro ;)" class="jokepics fade">
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="modal" class="modal">
+        <span class="prompt">You dont need a Break?</span>
+        <button class="no">I need this Break!</button>
+        <a href="./mathsNoCalc_instructions.html"><button class="yes">I don't need a Break</button></a>
+    </dialog>    
+    
+
+</body> 
+
+<script src="./script.js"></script>
+    
+</html>    
+    
+    
+
